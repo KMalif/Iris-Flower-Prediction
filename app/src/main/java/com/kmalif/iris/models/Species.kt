@@ -1,4 +1,6 @@
 package com.kmalif.iris.models
 
-class Species {
-}
+data class Species (
+    var name : String = "",
+    var image : Int = 0
+)
