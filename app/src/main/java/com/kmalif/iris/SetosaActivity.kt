@@ -11,9 +11,16 @@ class SetosaActivity : AppCompatActivity() {
         binding = ActivitySetosaBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getResultDetail()
+        iconBackAction()
     }
 
     private fun getResultDetail(){
         binding.tvResult.text = intent.getIntExtra("setosa", 0).toString()
+    }
+
+    private fun iconBackAction(){
+        binding.IconBack.setOnClickListener {
+            finish()
+        }
     }
 }

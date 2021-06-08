@@ -12,4 +12,12 @@
     <string name="see">See more</string>
     <string name="Placeholder">Placeholder</string>
     <string name="percent">%</string>
+    <string name="namaLatin">Nama Ilmiah</string>
+    <string name="policyHead">Information</string>
+    <string name="Setosa">Iris setosa</string>
+    <string name="infoDetail">Iris setosa, iris berujung bulu, merupakan spesies tumbuhan berbunga dalam genus Iris dari famili Iridaceae, termasuk dalam subgenus Limniris dan seri Tripetalae.</string>
+    <string name="virginica">Iris virginica</string>
+    <string name="infoDetailVirginica">Iris virginica, dengan nama umum Virginia iris, adalah spesies tanaman berbunga abadi, asli dari Amerika Utara bagian timur. Hal ini biasa terjadi di sepanjang dataran pantai dari Florida ke Georgia di Amerika Serikat Tenggara.</string>
+    <string name="versicolor">Iris versicolor</string>
+    <string name="infoDetailversicolor">Iris versicolor juga biasa dikenal sebagai bendera biru, harlequin blueflag, bendera biru yang lebih besar, bendera biru utara, dan bendera racun, ditambah variasi lain dari nama-nama ini, dan di Inggris dan Irlandia sebagai iris ungu.</string>
 </resources>

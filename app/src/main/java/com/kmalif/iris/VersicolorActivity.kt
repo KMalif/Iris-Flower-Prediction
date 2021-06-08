@@ -11,9 +11,16 @@ class VersicolorActivity : AppCompatActivity() {
         binding = ActivityVersicolorBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getResultDetail()
+        iconBackAction()
     }
 
     private fun getResultDetail(){
         binding.tvResult.text = intent.getIntExtra("versicolor", 0).toString()
+    }
+
+    private fun iconBackAction(){
+        binding.IconBack.setOnClickListener {
+            finish()
+        }
     }
 }

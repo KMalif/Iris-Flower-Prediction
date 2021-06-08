@@ -11,10 +11,17 @@ class VirginicaActivity : AppCompatActivity() {
         binding = ActivityVirginicaBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getResultDetail()
+        iconBackAction()
     }
 
 
     private fun getResultDetail(){
         binding.tvResult.text = intent.getIntExtra("virginica", 0).toString()
+    }
+
+    private fun iconBackAction(){
+        binding.IconBack.setOnClickListener {
+            finish()
+        }
     }
 }
