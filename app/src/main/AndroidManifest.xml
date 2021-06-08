@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Iris">
+        <activity android:name=".VirginicaActivity"></activity>
+        <activity android:name=".VersicolorActivity" />
+        <activity android:name=".SetosaActivity" />
+        <activity android:name=".ArticleActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

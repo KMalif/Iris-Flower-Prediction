@@ -1,10 +1,14 @@
 package com.kmalif.iris.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.kmalif.iris.SetosaActivity
+import com.kmalif.iris.VersicolorActivity
+import com.kmalif.iris.VirginicaActivity
 import com.kmalif.iris.databinding.FragmentPredictionBinding
 import com.kmalif.iris.ml.Iris
 import com.kmalif.iris.models.History
@@ -67,14 +71,15 @@ class PredictionFragment : Fragment() {
 
         //Add to DB
         addHistory(Slength.toString(),SWidth.toString(), Plength.toString(), PWidth.toString(), result )
-        showPrediction(result)
+//        showPrediction(result)
+        toResultActivity(irisSetosa.toInt(), irisVersicolor.toInt(), irisVirginica.toInt())
         // Releases model resources if no longer used.
         model.close()
     }
 
-    private fun showPrediction(result : String ){
-        binding.TVResult.setText(result)
-    }
+//    private fun showPrediction(result : String ){
+//        binding.TVResult.setText(result)
+//    }
 
     private fun setupRealm(){
         Realm.init(activity)
@@ -93,6 +98,19 @@ class PredictionFragment : Fragment() {
         histories.setPWidth(PWidth)
         histories.setResult(Result)
         realm.commitTransaction()
+    }
+
+    private fun toResultActivity(setosa : Int, versicolor: Int, virginica: Int){
+        if (setosa > versicolor && setosa >virginica){
+            startActivity(Intent(activity, SetosaActivity::class.java).putExtra("setosa", setosa))
+        }
+        else if (versicolor > setosa && versicolor>virginica){
+            startActivity(Intent(activity, VersicolorActivity::class.java).putExtra("versicolor", versicolor))
+        }
+        else if (virginica > setosa && virginica > versicolor){
+            startActivity(Intent(activity, VirginicaActivity::class.java).putExtra("virginica", virginica))
+        }
+
     }
 
 }

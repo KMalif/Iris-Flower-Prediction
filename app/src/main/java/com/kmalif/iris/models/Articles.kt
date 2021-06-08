@@ -1,4 +1,7 @@
 package com.kmalif.iris.models
 
-class Articles {
-}
+data class Articles (
+        var title : String = "",
+        var content : String = "",
+        var image : Int = 0
+)
