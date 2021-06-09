@@ -71,7 +71,7 @@ class PredictionFragment : Fragment() {
                 "Iris Virginica ${irisVirginica.toString()} % "
 
         //Add to DB
-//        addHistory(Slength.toString(),SWidth.toString(), Plength.toString(), PWidth.toString(), result )
+        addHistory(Slength.toString(),SWidth.toString(), Plength.toString(), PWidth.toString(), result )
 //        showPrediction(result)
         toResultActivity(irisSetosa.toInt(), irisVersicolor.toInt(), irisVirginica.toInt())
         // Releases model resources if no longer used.

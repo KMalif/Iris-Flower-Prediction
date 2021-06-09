@@ -13,7 +13,11 @@ object SpeciesData {
         "Pumila",
         "Laevigata",
         "Setosa",
-        "Virginica")
+        "Virginica",
+        "Japonica",
+        "Brojo Lintang",
+        "Cemetery",
+        "Yellow Iris")
 
     private val speciesImage = arrayOf(
         R.drawable.germanica,
@@ -25,7 +29,11 @@ object SpeciesData {
         R.drawable.pumila,
         R.drawable.laevigata,
         R.drawable.setosa,
-        R.drawable.virginica
+        R.drawable.virginica,
+        R.drawable.japonica,
+        R.drawable.brojolintang,
+        R.drawable.cemetery,
+        R.drawable.yellow
     )
 
     val listSpecies : ArrayList<Species>
